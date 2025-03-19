@@ -126,12 +126,14 @@
             text-align: center;
             align-items: center;
             width: 100%;
-            & div, ul {
-                justify-content: center;
-                align-items: center;
-                width: 100%;
+        }
+
+        #aside div,
+        #aside ul {
+            justify-content: center;
+            align-items: center;
+            width: 100%;
             list-style-type: none;
-            }
         }
 
         hr {
@@ -143,12 +145,14 @@
             align-items: center;
             display: flex;
             justify-content: center;
-            & p, svg {
-                margin: 3px;
-            }
             border: none;
             background-color: rgb(199, 104, 68);
             color: white;
+        }
+
+        button p,
+        button svg {
+            margin: 3px;
         }
         
         #intermed {
@@ -178,13 +182,14 @@
 
             #advogadas {
                 width: 100%;
-                & .advogada {
-                    width: min-content;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                }
+            }
+
+            #advogadas .advogada {
+                width: min-content;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
             }
 
             #confmob {
@@ -219,14 +224,16 @@
             #oabray {
                 display: flex;
                 flex-direction: column;
-                & #oabdiv {
-                    display: none;
-                } & div {
-                    margin: 2px;
-                    & p {
-                        margin: none;
-                    }
-                }
+            }
+
+            #oabray #oabdiv {
+                display: none;
+            }
+            #oabray div {
+                margin: 2px;
+            }
+            #oabray div p {
+                margin: none;
             }
 
             #aside, #intermed, #list {
@@ -295,10 +302,10 @@
             #oabray {
                 display: flex;
                 flex-direction: row;
-                & #oabdiv {
-                    margin-left: 20px;
-                    margin-right: 20px;
-                }
+            }
+            #oabray #oabdiv {
+                margin-left: 20px;
+                margin-right: 20px;
             }
         }
     </style>
