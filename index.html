@@ -128,8 +128,7 @@
             width: 100%;
         }
 
-        #aside div,
-        #aside ul {
+        #aside div, ul {
             justify-content: center;
             align-items: center;
             width: 100%;
@@ -172,6 +171,22 @@
             display: flex;
             flex-direction: row;
         }
+
+        #list ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        #list ul li {
+            width: 100%;
+            text-align: center;
+        }
+
 
         @media (orientation: portrait) {
             main {
@@ -252,6 +267,21 @@
                 padding-inline-end: 0;
                 padding-block-end: 0;
                 padding-block-start: 0;
+            }
+
+            #list ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            
+            #list ul li {
+                width: 100%;
+                text-align: center;
             }
         }
 
